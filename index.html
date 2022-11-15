@@ -19,6 +19,20 @@
 <body>
 
 	<div id="container">
+		
+		<!-- Mobile Nav --> 
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="recommendations.html">Classes</a>
+				<a href="gallery.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 
 		<header>
 		
@@ -34,7 +48,7 @@
 		
 		</header>
 		
-		<nav>
+		<nav class="tablet-desktop">
 		
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -76,8 +90,8 @@
 			<div>
 			
 				<audio controls>
-					<source src="media/audio-happy.mp3" type="audio/mp3"> 
-					<source src="media/audio-happy.ogg" type="audio/ogg">
+					<source src="/media/audio-happy.mp3" type="audio/mp3"> 
+					<source src="/media/audio-happy.ogg" type="audio/ogg">
 					<p>Your browser does not support the audio file.</p>
 				</audio>
 				
@@ -95,6 +109,8 @@
 		</footer>
 		
 	</div>	
+	
+	<script src="scripts/script.js"></script>
 		
 </body>
 </html>

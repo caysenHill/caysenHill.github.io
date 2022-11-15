@@ -42,11 +42,17 @@ header {
 	background-color: #fff;
 	margin-bottom: 1%;
 }
-/* mobile style rules for nav */
-nav {
-	padding: 1%;
-	margin-bottom: 1%;
-	background-color: #fff;
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	padding: 3%;
+	display: block;
 }
 
 nav ul {
@@ -172,9 +178,16 @@ footer {
 		display: block;
 	}
 	
-	.mobile {
+	.mobile, .mobile-nav {
 		display: none;
 	}
+	
+	/*style rules for nav */
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+	background-color: #fff;
+}
 	
 	/* Tablet Viewport: Style rules for main content area */
 	.map {
@@ -252,7 +265,28 @@ footer {
 		width: 70%;
 		margin: 0 auto;
 	}
+	
+	/* Tablet Viewport: Animation */
+	@-webkit-keyframes text-animation {
+		0% { font-size: .25em; }
+		50% { font-size: 1.4em; }
+		100% { font-size: 1em; }
+	}
+	
+	@keyframes text-animation { 
+		0% { font-size: .25em; }
+		50% { font-size: 1.4em; }
+		100% { font-size: 1em; }
+	}
 		
+	figcaption {
+		-webkit-animation-name: text-animation;
+		animation-name: text-animation;
+		-webkit-animation-delay: 2s;
+		animation-delay: 2s;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+	}
 	
 }
 	
