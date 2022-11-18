@@ -79,6 +79,13 @@ nav li a {
 	text-decoration: none;
 }
 
+.mobile-nav a.menu-icon {
+	display:block;
+	position:absolute;
+	right: 0;
+	top: 0;
+}
+
 /* Show mobile class, hide tablet-desktop class */
 .mobile {
 	display: block;
@@ -174,16 +181,16 @@ footer {
 @media screen and (min-width: 630px), print {
 	
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
-	.tablet-desktop {
-		display: block;
-	}
-	
-	.mobile, .mobile-nav {
+	.tablet-desktop, #menu-links {
 		display: none;
 	}
 	
+	.mobile, .mobile-nav {
+		display: block;
+	}
+	
 	/*style rules for nav */
-nav {
+	nav {
 	padding: 1%;
 	margin-bottom: 1%;
 	background-color: #fff;
@@ -294,6 +301,14 @@ nav {
 /* Desktop viewport media query */
 @media screen and (min-width: 1015px), print {
 	
+	/*show tablet-desktop hide mobile*/
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
 	
 	/* Desktop Viewport: Style rule for header */
 	header {
